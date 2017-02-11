@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>(｡･∀･)ﾉﾞ设置div样式</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<!-- 引入js文件 -->
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<!-- wrap -->
+		<section class="wrap">
+			<!-- header -->
+			<header>
+				<h3>请为下面的DIV设置样式</h3>
+				<input id="btn_set" type="button" value="点我设置" />
+			</header>
+			<!-- content -->
+			<div id="box">(｡･∀･)ﾉﾞ</div>
+		</section>
+		<!-- mask -->
+		<div id="mask">
+			<div class="set_wrap">
+				<!-- set option -->
+				<div class="set_opt">
+					<dl class="color_wrap">
+						<dt>请选择背景色:</dt>
+						<dd id="c_green">绿色</dd>
+						<dd id="c_yellow">黄色</dd>
+						<dd id="c_blue">蓝色</dd>
+					</dl>
+					<dl>
+						<dt>请选择宽(px):</dt>
+						<dd id="w_100">100</dd>
+						<dd id="w_240">240</dd>
+						<dd id="w_300">300</dd>
+					</dl>
+					<dl>
+						<dt>请选择高(px):</dt>
+						<dd id="h_100">100</dd>
+						<dd id="h_240">240</dd>
+						<dd id="h_300">300</dd>
+					</dl>
+				</div>
+				<div class="dec_wrap">
+					<input id="btn_reset" type="button" value="恢复" />
+					<input id="btn_confirm" type="button" value="确认" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+	margin: 0;
+	display: flex;
+}
+#wrap{
+	margin: 20px auto;
+}
+#wrap span{
+	font: 14px 'Source Code Pro';
+	display: inline-block;
+	vertical-align: top;
+	width: 86px;
+	text-align: center;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid red;
+	margin-right: -1px;
+	margin-bottom: -1px;
+}

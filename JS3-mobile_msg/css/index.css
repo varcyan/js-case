@@ -1,0 +1,158 @@
+/* css reset */
+body{
+	margin: 0;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+input{
+	border: none;
+	outline: none;
+}
+img{
+	vertical-align: top;
+}
+/* global */
+body{
+	font: 14px 'Microsoft Yahei';
+	background-color: #8f8bb3;
+}
+input{
+	font: 14px 'Microsoft Yahei';
+}
+#mobile{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 324px;
+	height: 650px;
+	box-sizing: border-box;
+	padding: 36px 2px 58px;
+	border: 1px solid #e9e9ed;
+	border-radius: 30px;
+	background-color: #e5e3ec;
+	margin: 30px auto;
+	box-shadow: 5px 5px 5px #827faf;
+}
+#mobile .hd{
+	position: absolute;
+	top: 18px;
+	left: 50%;
+	margin-left: -28px;
+	width: 56px;
+	height: 4px;
+	background-color: #979799;
+	border-radius: 2px;
+}
+#mobile .main{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	/*border: 1px solid #b5b3bc;*/
+	background-color: #fff;
+}
+.main form{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 8px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 58px;
+	background-color: #fff;
+	border-top: 1px solid #e3e3e3;
+}
+#mobile .ft{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -20px;
+	width: 40px;
+	height: 40px;
+	background-color: #f7f5f9;
+	border-radius: 20px;
+}
+.main .chart_wrap{
+	height: 100%;
+	padding-top: 12px;
+	box-sizing: border-box;
+	overflow-y: auto;
+	background: url(../img/rbg.jpg) center top/100%;
+}
+.main .head_wrap{
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+.main form #text{
+	width: 194px;
+	height: 40px;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid #e3e3e3;
+	box-sizing: border-box;
+	padding: 0 8px;
+	line-height: 40px;
+	color: #aeaeae;
+}
+#mobile .commit{
+	color: #d97389;
+	cursor: pointer;
+	padding: 0 5px;
+	height: 100%;
+	line-height: 57px;
+}
+.main .chart{
+	margin-bottom: 10px;
+	width: 100%;
+	overflow: hidden;
+}
+.main .chartB{
+	justify-content: flex-end;
+}
+.main .head{
+	margin: 0 15px;
+}
+.chart .text{
+	position: relative;
+	min-height: 40px;
+	max-width: 220px;
+	border-radius: 12px;
+	box-sizing: border-box;
+	padding: 8px 10px;
+	line-height: 24px;
+	word-break: break-all;
+}
+.chartA .head, .chartA .text{
+	float: left;
+}
+.chartB .head, .chartB .text{
+	float: right;
+}
+.chartA .text{
+	background-color: #ddd;
+}
+.chartB .text{
+	background-color: pink;
+}
+.chart i{
+	position: absolute;
+	top: 14px;
+	border: 6px solid transparent;
+}
+.chartA i{
+	border-right-color: #ddd;
+	left: -12px;
+}
+.chartB i{
+	border-left-color: pink;
+	right: -12px;
+}

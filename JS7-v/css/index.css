@@ -1,0 +1,67 @@
+/* css reset */
+body{
+	margin: 0;
+}
+input{
+	margin: 0;
+	padding: 0;
+	border: none;
+	font: 14px 'Source Code Pro','Microsoft Yahei';
+	outline: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* global */
+html{
+	height: 100%;
+}
+body{
+	font: 14px 'Source Code Pro','Microsoft Yahei';
+	height: 100%;
+	background: url(../img/bg.png) no-repeat 0 0/100%;
+	text-align: center;
+	padding-top: 20px;
+}
+.wrap{
+	display: inline-block;
+	background: linear-gradient(90deg,#adeaec 0%,#6ebdfb 100%);
+	margin-top: 30px;
+	padding: 30px 10px;
+	border-radius: 5px;
+}
+.wrap .box{
+	position: relative;
+	margin-bottom: 15px;
+	width: 250px;
+	height: 250px;
+}
+.wrap1 .text{
+	width: 190px;
+	height: 36px;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+.box .item{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 50px;
+}
+.wrap1 .btn{
+	width: 100px;
+	height: 36px;
+	background-color: #fff;
+	border: 1px solid #5ab1fd;
+	border-radius: 5px;
+	align-self: flex-end;
+	cursor: pointer;
+}
+.wrap .btn:hover{
+	background-color: #5ab1fd;
+	color: #fff;
+}
