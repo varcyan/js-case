@@ -1,0 +1,138 @@
+/* css reset */
+body, h3{
+	margin: 0;
+}
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+input{
+	border: none;
+	outline: none;
+}
+h3{
+	font-weight: normal;
+}
+img{
+	vertical-align: top;
+}
+/* global */
+body{
+	font: 14px 'Microsoft Yahei';
+	background-color: #8f8bb3;
+}
+input{
+	font: 14px 'Microsoft Yahei';
+}
+#mobile{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 324px;
+	height: 650px;
+	box-sizing: border-box;
+	padding: 36px 2px 58px;
+	border: 1px solid #e9e9ed;
+	border-radius: 30px;
+	background-color: #e5e3ec;
+	margin: 30px auto;
+	box-shadow: 5px 5px 5px #827faf;
+}
+#mobile .hd{
+	position: absolute;
+	top: 18px;
+	left: 50%;
+	margin-left: -28px;
+	width: 56px;
+	height: 4px;
+	background-color: #979799;
+	border-radius: 2px;
+}
+#mobile .main{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	/*border: 1px solid #b5b3bc;*/
+	background-color: #fff;
+	/*background: url(../img/rbg.jpg) center top/100%;*/
+}
+.main form{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 8px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 58px;
+	background-color: #fff;
+	border-top: 1px solid #e3e3e3;
+}
+#mobile .ft{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -20px;
+	width: 40px;
+	height: 40px;
+	background-color: #f7f5f9;
+	border-radius: 20px;
+}
+.main .wrap{
+	box-sizing: border-box;
+	padding-top: 40px;
+}
+.wrap li,.wrap .headn{
+	cursor: pointer;
+}
+.wrap .act{
+	background-color: rgba(255,0,0, .4);
+	color: #fff;
+}
+.wrap .group{
+	border-top: 1px solid #eee;
+	margin-bottom: -1px;
+}
+.wrap .headn{
+	position: relative;
+	height: 52px;
+	line-height: 52px;
+	padding-left: 28px;
+	border-bottom: 1px solid #eee;
+}
+.headn h3{
+	font-size: 16px;
+}
+.headn i{
+	position: absolute;
+	top: 22px;
+	left: 14px;
+	border: 6px solid transparent;
+	border-left-color: #eee;
+	transform-origin: 3px 3px;
+	transition: .3s;
+}
+.wrap .list{
+	display: none;
+}
+.list li{
+	height: 38px;
+	line-height: 38px;
+	padding-left: 34px;
+	transition: .2s;
+}
+.list .hover{
+	background-color: #eee;
+}
+.list .active{
+	background-color: rgba(255,0,0,.4);
+	color: #fff;
+}
+.wrap .row_act{
+	transform: rotate(90deg) scaleX(1.2);
+}
