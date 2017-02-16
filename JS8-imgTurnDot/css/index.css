@@ -1,0 +1,110 @@
+/* css reset*/
+body{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	vertical-align: top;
+}
+/* global */
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	min-width: 1120px;
+	min-height: 700px;
+}
+.box{
+	position: relative;
+	height: 100%;
+	min-width: 1000px;
+	margin: 0 auto;
+}
+.box .wrap{
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+.wrap a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: .5s;
+}
+.wrap a.active{
+	opacity: 1;
+}
+.wrap img{
+	width: 100%;
+}
+.box .dot{
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	display: flex;
+	transform: translateX(-50%);
+}
+.dot li{
+	position: relative;
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	background-color: rgba(0,0,0,.7);
+	margin: 0 10px;
+	cursor: pointer;
+}
+.dot li.active{
+	background-color: #ff4400;
+}
+.dot span{
+	position: absolute;
+	top: -100px;
+	left: 50%;
+	transform: translateX(-50%) scale(0);
+	width: 140px;
+	height: 90px;
+	box-sizing: border-box;
+	padding: 5px;
+	/*display: none;*/
+	transform-origin: center bottom;
+	transition: .3s;
+
+}
+.dot span.active{
+	/*display: block;*/
+	transform: translateX(-50%) scale(1);
+}
+.dot i{
+	position: absolute;
+	border: 8px solid transparent;
+	border-top-color: rgba(0,0,0,.5);
+	bottom: -16px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.box .page{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font: bold 30px '仿宋';
+	color: #fff;
+	background-color: rgba(0,0,0,.5);
+	width: 30px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	z-index: 10;
+	cursor: pointer;
+}
+.box .prev{
+	left: 0;
+}
+.box .next{
+	right: 0;
+}
