@@ -1,0 +1,85 @@
+/* css reset */
+body, h3{
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+/* global */
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	font: 16px 'Microsoft Yahei';
+	background: linear-gradient(70deg, #ead4cd 0%, #fdedec 30%, #fffdf8 60%, #f6eee3 100%);
+	display: flex;
+	min-height: 560px;
+}
+h3{
+	font-weight: normal;
+}
+.wrap{
+	margin: auto;
+	transform: translateY(-40px);
+	/*display: flex;*/
+	box-sizing: border-box;
+	width: 600px;
+	border: 1px solid #e04b67;
+	border-radius: 5px;
+	box-shadow: 0 0 8px #e8a5aa;
+	background-color: #fff;
+	padding-top: 40px;
+}
+.wrap h3{
+	font-size: 34px;
+	color: #e14c65;
+	text-align: center;
+	line-height: 46px;
+}
+.wrap .comment{
+	padding: 40px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.comment .star{
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 40px;
+	height: 60px;
+	line-height: 60px;
+	color: #eee;
+}
+.star span{
+	cursor: pointer;
+	width: 20%;
+	height: 100%;
+}
+.star .pink{
+	color: pink;
+}
+.star .great{
+	color: #e04b67;
+}
+.comment .rate{
+	width: 120px;
+	height: 50px;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	background-color: #e04b67;
+	margin-left: 15px;
+	font-size: 22px;
+	opacity: 0;
+	transition: .3s;
+}
+.tips{
+	height: 64px;
+	color: #fff;
+	line-height: 64px;
+	text-align: center;
+	background-color: #e04b67;
+}
