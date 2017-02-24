@@ -1,0 +1,156 @@
+/* css reset */
+body, h3{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+input{
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+a{
+	text-decoration: none;
+}
+/* global */
+body{
+	background: linear-gradient(90deg,#b8b4c5 0%,#8f9bba 50%,#c3dff0 100%);
+	font-family: 'Source Code Pro','Microsoft Yahei';
+}
+input{
+	font-family: 'Source Code Pro','Microsoft Yahei';
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.wrap{
+	padding-top: 20px;
+	background-color: #fff;
+	width: 520px;
+	margin: 50px auto;
+}
+.wrap header{
+	position: relative;
+	height: 56px;
+	width: 100%;
+	padding: 0 15px;
+	margin-left: -15px;
+	background-color: #e15671;
+	color: #fff;
+}
+.wrap header:before,.wrap header:after{
+	content:'';
+	position: absolute;
+	bottom: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #ac0123;
+}
+.wrap header:before{
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin: left bottom;
+}
+.wrap header:after{
+	right: 0;
+	transform: rotate(-45deg);
+	transform-origin: right bottom;
+
+}
+.wrap h3{
+	text-align: center;
+	line-height: 56px;
+}
+.wrap .list{
+	padding: 15px 0;
+}
+.list .item{
+	padding: 18px 12px;
+	border-bottom: 1px dotted #ddd;
+}
+.item input.text{
+	width: 56%;
+	height: 40px;
+	box-sizing: border-box;
+	padding: 0 7px;
+	font-size: 16px;
+}
+.show{
+	display: block;
+}
+.show .text{
+	height: 40px;
+	line-height: 40px;
+	padding: 0 8px;
+}
+.inp{
+	display: none;
+}
+.inp .text{
+	border: 1px solid #e15671;
+}
+.inp a{
+	height: 40px;
+	line-height: 40px;
+	padding: 0 18px;
+	box-sizing: border-box;
+	border: 1px solid #e15671;
+	margin-left: 8px;
+	color: #e15671;
+}
+.inp a:nth-of-type(1){
+	background-color: #e15671;
+	color: #fff;
+}
+.item .btn_change{
+	width: 40px;
+	height: 40px;
+	background: url(../img/c.png) no-repeat center center;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.content{
+	position: relative;
+}
+.tips{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	height: 50px;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+	line-height: 50px;
+	border-radius: 5px;
+	animation: 2s show;
+	opacity: 0;
+	transition: 2s;
+	display: none;
+}
+@keyframes show{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	70%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
