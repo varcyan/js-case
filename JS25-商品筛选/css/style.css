@@ -1,0 +1,88 @@
+/* css reset */
+body, dl, dd, h3{
+	margin: 0;
+}
+/* tools */
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+/* global */
+html,body{
+	height: 100%;
+}
+body {
+	background: linear-gradient(to bottom, #8a84d0 40%, #8a84d0 80%, #a493ca 100%);
+	font: 14px 'Source Code Pro','Microsoft Yahei';
+	display: flex;
+}
+section {
+	width: 800px;
+	margin: auto;
+}
+header {
+	background-color: rgba(255,255,255,.5);
+	padding-left: 12px;
+}
+header h3 {
+	line-height: 40px;
+	font-size: 14px;
+	float: left;
+	margin-right: 15px;
+}
+header .mark{
+	float: left;
+	width: 700px;
+}
+.mark mark {
+	position: relative;
+	float: left;
+	background-color: #fff;
+	border: 1px solid rgba(255,0,0,.4);
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	padding: 0 30px 0 10px;
+	margin: 5px 10px 4px 0;
+}
+mark a{
+	position: absolute;
+	right: 3px;
+	top: 6px;
+	width: 18px;
+	height: 18px;
+	background-color: rgba(255,0,0,.4);
+	text-align: center;
+	line-height: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+.type {
+	background-color: rgba(255,255,255,.9);
+	padding: 12px 18px;
+}
+.type dl {
+	border-bottom: 1px dotted #888;
+	line-height: 36px;
+	overflow: hidden;
+	cursor: default;
+}
+.type dl:last-child {
+	border-bottom: none;
+}
+dl dt {
+	float: left;
+	color: #999;
+	margin-right: 10px;
+}
+dl dd {
+	float: left;
+	color: #333;
+	padding: 0 10px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+dd.active {
+	color: rgba(255,0,0,.4);
+}
