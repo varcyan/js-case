@@ -1,0 +1,90 @@
+html,body{
+	height: 100%;
+}
+body{
+	margin: 0;
+	font: 14px 'Source Code Pro','Microsoft Yahei';
+	background: linear-gradient(70deg, #ead4cd 0%, #fdedec 30%, #fffdf8 60%, #f6eee3 100%);
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+input{
+	outline: 0;
+	font: 14px 'Source Code Pro','Microsoft Yahei';
+	border: none;
+}
+section{
+	width: 479px;
+	height: 591px;
+	margin: 30px auto 0;
+	box-sizing: border-box;
+	padding-top: 134px;
+	background: url(../img/bg1.png) no-repeat;
+}
+section input{
+	text-align: center;
+	background-color: #fff;
+}
+.calList{
+	height: 310px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.calList li{
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	padding: 0 25px;
+	margin-bottom: 8px;
+}
+.opt{
+	display: flex;
+	margin-right: 15px;
+}
+.opt span{
+	width: 52px;
+	height: 44px;
+	cursor: pointer;
+}
+.opt input{
+	width: 52px;
+	height: 36px;
+	border-radius: 5px;
+	margin: 0 5px;
+}
+.opt .minus{
+	background: url(../img/sub.png) no-repeat;
+}
+.opt .add{
+	background: url(../img/add.png) no-repeat;
+}
+.price{
+	width: 280px;
+	height: 36px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 0 8px;
+	line-height: 36px;
+	background-color: #171717;
+	color: #888;
+}
+.allBox{
+	line-height: 38px;
+	color: #888;
+	padding: 10px 20px;
+}
+.allBox div{
+	display: flex;
+	flex-wrap: wrap;
+}
+.allBox .allNum{
+	height: 36px;
+	padding: 0 15px;
+	border-radius: 5px;
+	margin-bottom: 8px;
+	background-color: #fff;
+	margin: 0 10px 5px;
+}
