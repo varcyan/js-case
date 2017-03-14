@@ -1,0 +1,94 @@
+/* css reset */
+body{
+	margin: 0;
+}
+/* global */
+body{
+	font: 16px 'Source Code pro';
+}
+.box{
+	position: relative;
+	margin: 50px auto;
+	width: 80px;
+	height: 80px;
+	background: url(../img/move.png) no-repeat 0 0;
+}
+	.box:hover{
+		/*animation: move 3s;*/
+	}
+	.box:hover .down{
+		opacity: 1;
+	}
+	.box .down{
+		position: absolute;
+		top: -10px;
+		left: -120px;
+		width: 106px;
+		height: 44px;
+		background: url(../img/down.png) no-repeat 0 0;
+		opacity: 0;
+		transition: .5s;
+	}
+	@keyframes move{
+		0%{ background-position: -80px 0; }
+		4.9%{ background-position: -80px 0; }
+
+		5%{ background-position: -160px 0; }
+		9.9%{ background-position: -160px 0; }
+
+		10%{ background-position: -240px 0; }
+		14.9%{ background-position: -240px 0; }
+
+		15%{ background-position: -320px 0; }
+		19.9%{ background-position: -320px 0; }
+
+		20%{ background-position: -400px 0; }
+		24.9%{ background-position: -400px 0; }
+
+		25%{ background-position: -480px 0; }
+		29.9%{ background-position: -480px 0; }
+
+		30%{ background-position: -560px 0; }
+		34.9%{ background-position: -560px 0; }
+
+		35%{ background-position: -640px 0; }
+		39.9%{ background-position: -640px 0; }
+
+		40%{ background-position: -720px 0; }
+		44.9%{ background-position: -720px 0; }
+
+		45%{ background-position: -800px 0; }
+		49.9%{ background-position: -800px 0; }
+
+		50%{ background-position: -880px 0; }
+		54.9%{ background-position: -880px 0; }
+
+		55%{ background-position: -960px 0; }
+		59.9%{ background-position: -960px 0; }
+
+		60%{ background-position: -1040px 0; }
+		64.9%{ background-position: -1040px 0; }
+
+		65%{ background-position: -1120px 0; }
+		69.9%{ background-position: -1120px 0; }
+
+		70%{ background-position: -1200px 0; }
+		74.9%{ background-position: -1200px 0; }
+
+		75%{ background-position: -1200px 0; }
+		79.9%{ background-position: -1200px 0; }
+
+		80%{ background-position: -1120px 0; }
+		84.9%{ background-position: -1120px 0; }
+
+		85%{ background-position: -1040px 0; }
+		89.9%{ background-position: -1040px 0; }
+
+		90%{ background-position: -960px 0; }
+		94.9%{ background-position: -960px 0; }
+
+		95%{ background-position: -880px 0; }
+		99.9%{ background-position: -880px 0; }
+
+		/*100%{ background-position: -880px 0; }*/
+	}
