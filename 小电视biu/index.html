@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+		}
+		.box {
+			position: absolute;
+			bottom: 100px;
+			left: calc(50% - 40px);
+			width: 80px;
+			height: 80px;
+			background: url(img/move.png) no-repeat 0 0;
+			overflow: hidden;
+		}
+		.bullet {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			/*background-color: rgba(255, 0, 0, .4);*/
+		}
+		.bullet span {
+			position: fixed;
+			width: 3px;
+			height: 10px;
+			background: linear-gradient(to bottom, #333 0px, #333 4px, #fff 4px, #fff 100%);
+			border-radius: 50%;
+			border: 1px solid #333;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="bullet"></div>
+	</div>
+	<script src="js/tools_.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
