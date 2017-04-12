@@ -1,0 +1,57 @@
+/* css reset */
+body{
+	margin: 0;
+}
+/* global */
+html,body {
+	height: 100%;
+	font: 14px 'Source code pro','Microsoft Yahei';
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(45deg, #4f19d4 0%, #5a43dc 20%, #6a4edb 32%, #756ae5 42%, #887eea 50%, #86e5ff 100%);
+}
+textarea {
+	font: 14px 'Source code pro','Microsoft Yahei';
+	outline: none;
+	resize: none;
+	border: none;
+}
+section {
+	width: 1000px;
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #7168c7;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.box{
+	width: 350px;
+	height: 100%;
+	background-color: #f1f1f1;
+	overflow-y: auto;
+	box-sizing: border-box;
+	padding: 15px;
+	word-break: break-all;
+}
+.btn {
+	width: 120px;
+	height: 120px;
+	background-color: #f1f1f1;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+.btn span:first-child{
+	display: block;
+}
+.btn:before {
+	content: '→';
+	font-size: 30px;
+	line-height: 40px;
+	display: block;
+}
