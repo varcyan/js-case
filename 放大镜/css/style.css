@@ -1,0 +1,31 @@
+/* css reset */
+body {
+	margin: 0;
+}
+section {
+	margin: 20px 0 0 200px;
+}
+.wrap {
+	position: relative;
+	width: 536px;
+	height: 335px;
+	background: url(../img/anna1.jpg) no-repeat 0 0/536px auto;
+}
+.cover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	height: 100px;
+	background-color: rgba(255,255,255,.4);
+	display: none;
+	cursor: move;
+}
+.show {
+	position: absolute;
+	left: 103%;
+	width: 400px;
+	height: 400px;
+	background: url(../img/anna1.jpg) no-repeat 0 0/2144px auto;
+	display: none;
+}

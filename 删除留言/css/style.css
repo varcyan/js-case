@@ -1,0 +1,66 @@
+/* css reset */
+body {
+	margin: 0;
+	display: flex;
+}
+input {
+	outline: none;
+	padding: 0;
+	margin: 0;
+}
+textarea {
+	outline: none;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+/* global */
+body {
+	font-family: 'Microsoft Yahei';
+	font-size: 14px;
+}
+section {
+	margin: 50px auto 0;
+}
+form {
+	overflow: hidden;
+}
+#inp {
+	width: 620px;
+	height: 120px;
+	resize: none;
+	display: block;
+	box-sizing: border-box;
+	padding: 8px;
+	font-family: 'Microsoft Yahei';
+}
+.btn {
+	padding: 0 20px;
+	text-align: center;
+	line-height: 34px;
+	height: 34px;
+	border: none;
+	float: right;
+	margin-top: 10px;
+}
+.msg {
+	padding-top: 10px;
+}
+.msg li {
+	position: relative;
+	padding: 8px 12px;
+	border: 1px solid #ddd;
+	margin-bottom: -1px;
+}
+.msg .del {
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+.msg span{
+	display: block;
+	margin-right: 20px;
+	word-break: break-all;
+}

@@ -1,0 +1,91 @@
+body{
+	margin: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img {
+	vertical-align: top;
+}
+textarea {
+	outline: none;
+	padding: 15px;
+	box-sizing: border-box;
+}
+/* global */
+body{
+	font: 14px 'Source Code Pro','Microsoft Yahei';
+	display: flex;
+}
+section {
+	margin: 20px auto 0;
+	width: 400px;
+}
+.text {
+	width: 400px;
+	height: 120px;
+	resize: none;
+}
+.commit{
+	overflow: hidden;
+}
+.commit a{
+	float: right;
+	padding: 10px 25px;
+	background: linear-gradient(to bottom, #ff8a91 90%, #f95e5e 100%);
+	color: #fff;
+	border-radius: 5px;
+}
+.msg li{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+.msg a{
+	width: 50px;
+	height: 45px;
+	overflow: hidden;
+	margin-right: 10px;
+}
+.msg a img {
+	width: 50px;
+}
+.msg {
+	padding-top: 20px;
+}
+.msg span {
+	position: relative;
+	width: calc(100% - 60px);
+	background-color: #eee;
+	box-sizing: border-box;
+	padding: 8px;
+	line-height: 28px;
+	border-radius: 8px;
+	word-break: break-all;
+}
+.msg span:before{
+	content: '';
+	position: absolute;
+	left: -16px;
+	top: 14px;
+	border: 8px solid transparent;
+	border-right-color: #eee;
+}
+.msg i{
+	position: absolute;
+	right: 10px;
+	top: 13px;
+	font-style: normal;
+	cursor: pointer;
+	color: red;
+	display: none;
+}
+.msg li:hover i{
+	display: block;
+}
