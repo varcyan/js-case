@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+		<style>
+			html{
+				height: 100%;
+			}
+			.full-pop {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 300px;
+				padding:10px;
+				background: #fff;
+				border: 1px solid #ccc;
+			}
+			.dialogTop {
+				overflow: hidden;
+			}
+			.dialogTop .title{
+				float: left;
+				font-size: 12px;
+			}
+			.dialogTop .close{
+				float: right;
+			}
+			.close {
+				cursor: pointer;
+			}
+			.content {
+				padding:30px 0;
+			}
+			.pop-btns {
+				text-align: right;
+			}
+		</style>
+		<script src="js/jquery-3.2.0.js"></script>
+		<script src="js/jqAlert.js"></script>
+	</head>
+
+	<body>
+		<input type="button" value="alert" id="btn" />
+		<!-- <div class="full-pop">
+			<div class="dialogTop">
+				<div class="title">这是一个弹框</div>
+		        <span class="close" title="关闭">×</span>
+			</div>
+            <div class="content">这里是弹框内容</div>
+            <div class="pop-btns">
+            	<button class="ok">确定</button>
+            	<button class="cancel">取消</button>
+            </div>
+		</div> -->
+		<script>
+			var btn = $('#btn');
+			btn.on('click',function(){
+				$(this).alert({
+					title: 'title',
+					content: 'content',
+					confirm: 'sure',
+					cancel: 'cancel',
+					left: 100,
+					top: 100,
+					width: 500
+				});
+			})
+		</script>
+	</body>
+</html>
