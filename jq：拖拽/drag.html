@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+		}
+		.box {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background-color: #eee;
+			border: 2px solid #000;
+		}
+	</style>
+	<script src="../jq/jquery-3.2.0.js"></script>
+	<script>
+		$(function (){
+			var box = $('.box');
+			// 鼠标点击
+			box.on('mousedown', function (e){
+				e.preventDefault();
+				var dx = e.clientX - $(this).offset().left;
+				var dy = e.clientY - $(this).offset().top;
+				$(document).on('mousemove', function (e){
+					var l = e.clientX - dx;
+					var t = e.clientY - dy;
+					// 限制范围
+					if (l <= 0) l = 0;
+					if (t <= 0) t = 0;
+					if (l >= $(this).outerWidth() - box.outerWidth()) {
+						l = $(this).outerWidth() - box.outerWidth();
+					} 
+					if (t >= $(this).outerHeight() - box.outerHeight()) {
+						t = $(this).outerHeight() - box.outerHeight();
+					} 
+					// 设置位置
+					box.css({
+						left: l,
+						top: t
+					});
+				})
+				$(document).on('mouseup', function (){
+					$(document).off('mousemove mouseup');
+				})
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style>
+	body,ul{
+		padding: 0;
+		margin: 0;
+	}
+	li{
+		list-style: none;
+	}
+	.wrap{
+		width: 964px;
+		height: 328px;
+		padding: 8px 4px;
+		border:1px solid #c6c6c6;
+		margin: 10px auto;
+	}
+	.left{
+		float:left;
+		background: #e7e7e7;
+	}
+	.left li{
+		width: 146px;
+		height: 82px;
+		line-height: 82px;
+		text-align: center;
+		border-left: 1px solid #c6c6c6;
+		border-top:1px solid #c6c6c6;
+	}
+	.left li:last-child{
+		border-bottom: 1px solid #c6c6c6;
+	}
+	.left li.active{
+		background: #fff;
+	}
+	.right div{
+		float:left;
+		width: 812px;
+		height: 330px;
+		position: relative;
+		display: none;
+	}
+	.right img{
+		width: 812px;
+		height: 330px;
+		display: none;
+		
+	}
+	.right div.active{
+		display: block;
+	}
+	.right ul{
+		width: 812px;
+		position: absolute;
+		top:300px;
+		color:#000;
+	}
+	.right li{
+		float:left;
+		width: 33.2%;
+		height: 30px;
+		line-height: 30px;
+		font-size: 12px;
+		text-align: center;
+	    background: #4a4a4a;
+	    opacity: 0.6;
+	    margin-right: 1px;
+	    color:#fff;
+	}
+	.flex4 li{
+		width: 24.8%;
+	}
+	.right .li_color{
+		background: red;
+	}
+	.no_margin{
+		margin-right: 0;
+	}
+	img.img_active{
+		display: block;
+	}
+</style>
+<script src="js/jquery-3.2.0.js"></script>
+<script>
+	$(function (){
+		// 获取元素
+		var lis = $('.left li');
+		var boxs = $('.right div');
+		// 为每个li设置点击事件
+		lis.each(function (index, item){
+			$(item).attr('index',index);
+			$(item).click(function (){
+				lis.css('background-color', '');
+				$(item).css('background-color','#fff');
+				boxs.css('display', '');
+				boxs.eq(index).css('display','block');
+			})
+		})
+		// 每个div内的事件
+		boxs.each(function (index, item){
+			var imgs = item.querySelectorAll('img');
+			var tabs = item.querySelectorAll('ul li');
+			$(tabs).each(function (index, item){
+				$(item).click(function (){
+					$(tabs).css('background-color', '');
+					$(item).css('background-color', 'red');
+					$(imgs).css('display', '');
+					$(imgs).eq(index).css('display', 'block');
+				})
+			})
+		})
+	})
+</script>
+</head>
+
+<body>
+	<div class="wrap">
+		<ul class="left" id="left">
+			<li style="background-color: #fff;">最热团购</li>
+			<li>商城特惠</li>
+			<li>名品推荐</li>
+			<li>缤纷活动</li>
+		</ul>
+		<div class="right" id="right">
+			<div style="display: block">
+				<img src="imgs/img1.jpg" style="display: block"/>
+				<img src="imgs/img2.jpg" />
+				<img src="imgs/img3.jpg" />
+				<ul>
+					<li style="background-color: red;">第一个第一项</li>
+					<li>第一个第二项</li>
+					<li>第一个第三项</li>
+				</ul>
+			</div>
+
+			<div>
+				<img src="imgs/img4.jpg" style="display: block"/>
+				<img src="imgs/img5.jpg" />
+				<img src="imgs/img6.jpg" />
+				<img src="imgs/img7.jpg" />
+				<ul class="flex4">
+					<li style="background-color: red;">第二个第一项</li>
+					<li>第二个第二项</li>
+					<li>第二个第三项</li>
+					<li>第二个第四项</li>
+				</ul>
+			</div>
+
+			<div>
+				<img src="imgs/img8.jpg" style="display: block"/>
+				<img src="imgs/img9.jpg" />
+				<img src="imgs/img10.jpg" />
+				<ul>
+					<li style="background-color: red;">第三个第一项</li>
+					<li>第三个第二项</li>
+					<li>第三个第三项</li>
+				</ul>
+			</div>
+
+			<div>
+				<img src="imgs/img11.jpg" style="display: block"/>
+				<img src="imgs/img12.jpg" />
+				<img src="imgs/img13.jpg" />
+				<img src="imgs/img1.jpg" />
+				<ul class="flex4">
+					<li style="background-color: red;">第四个第一项</li>
+					<li>第四个第二项</li>
+					<li>第四个第三项</li>
+					<li>第四个第四项</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		
+	</script>
+</body>
+</html>
