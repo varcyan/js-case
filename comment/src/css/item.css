@@ -1,0 +1,17 @@
+.item {
+  padding: 8px 10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 5px 0;
+  line-height: 24px;
+  font-size: 12px;
+}
+.item span {
+  color: #888;
+  text-decoration: underline;
+  display: inline-block;
+  margin-right: 6px;
+}
+.item div:last-child span {
+  display: block;
+}

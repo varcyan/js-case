@@ -1,0 +1,9 @@
+.box {
+  border: 1px solid #ff4400;
+  width: 400px;
+  padding: 30px 20px;
+}
+.items {
+  padding: 20px 0;
+  color: #333;
+}

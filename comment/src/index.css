@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+textarea {
+  padding: 0;
+  outline: none;
+}
+#root {
+  margin: 20px auto 0;
+}
