@@ -1,0 +1,55 @@
+body{
+	margin: 0;
+}
+.clear{
+	zoom: 1;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.wrap{
+	width: 277px;
+	margin: 50px;
+	background: #f1f1f1;
+	padding: 10px 12px;
+	border-radius: 5px;
+}
+#result{
+	height: 80px;
+	background-color: #333;
+	padding: 0 12px;
+	color: #fff;
+	font: normal 500 24px/80px "Microsoft Yahei";
+	margin-bottom: 20px;
+	border-radius: 5px;
+	text-align: right;
+}
+.box span{
+	display: block;
+	float: left;
+	width: 64px;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #eee;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+.box .calend{
+	margin-right: 0;
+}
+.box #returnZero{
+	height: 86px;
+	line-height: 86px;
+	font-size: 18px;
+}
+.box #equal{
+	width: 203px;
+	font-size: 20px;
+	margin-right: 0;
+}

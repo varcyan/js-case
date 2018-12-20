@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>16.点击遮罩层设置div的属性</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- 这里是被控制的盒子 -->
+		<div id="myDiv"></div>
+		<!-- 控制盒子的按钮 -->
+		<input id="btn" type="button" value="本王控制盒子的属性!" />
+		<input id="reset" type="button" value = "点我重置~" />
+		<!-- 遮罩层~ -->
+		<div id="cover">
+			<div class="setBox">
+				<div class="row clear">
+					<span>color:</span>
+					<span class="color" style="background-color: red;" id="red"></span>
+					<span class="color" style="background-color: yellow;" id="yellow"></span>
+					<span class="color" style="background-color: blue;" id="blue"></span>
+				</div>
+				<div class="row clear">
+					<span>width:</span>
+					<span class="width">30</span>
+					<span class="width">120</span>
+					<span class="width">200</span>
+				</div>
+				<div class="row clear">
+					<span>height:</span>
+					<span class="height">30</span>
+					<span class="height">120</span>
+					<span class="height">200</span>
+				</div>
+				<div class="row clear">
+					<span>自定义:</span>
+					<span id="radius">角样式</span>
+					<span id="px">
+						<i id="minus">-</i>
+						<i id="add">+</i>
+					</span>
+					<input type="color" id="myColor" />
+				</div>
+				<div class="row clear">
+					<span id="confirm">确定</span>
+					<span id="cancel">取消</span>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+body{
+	margin: 0;
+	height: 100%;
+	cursor: default;
+	font-family: 'Microsoft Yahei';
+	font-size: 12px;
+}
+.clear{
+	zoom: 1;
+}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+#myDiv{
+	width: 100px;
+	height: 100px;
+	border: 2px solid #333;
+	background-color: #eee;
+}
+#cover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0, .4);
+	display: none;
+}
+.setBox{
+	width: 270px;
+	height: 211px;
+	padding: 12px 15px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: -100px;
+}
+.row{
+	margin-bottom: 15px;
+}
+.row span{
+	display: block;
+	width: 52px;
+	height: 28px;	
+	border: 1px solid #eee;
+	float: left;
+	margin-right: 11px;
+	line-height: 28px;
+	text-align: center;
+}
+.row span:hover{
+	border-color: #333;
+}
+.row span:first-child{
+	width: 60px;
+}
+.row .color{
+	border-color: #fff;
+}
+.row #confirm{
+	margin-left: 50px;
+}
+.row #cancel{
+	width: 60px;
+	margin-left: 30px;
+}
+#px i{
+	display: inline-block;
+	font-style: normal;
+	width: 23px;
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #eee;
+	text-decoration: none;
+	color: #333;
+}
+#px #minus{
+	border-left: none;
+}
+#px #add{
+	border-right: none;
+}
